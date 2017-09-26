@@ -142,6 +142,10 @@ header a:hover{
 	padding: 16px;
 }
 
+#about_us img:hover{
+	transform: scale(1.1);
+}
+
 footer{
 	padding: 32px 0 !important;
 	text-align: center;
@@ -193,6 +197,10 @@ footer p{
 	margin-left: 4px;
 }
 
+#contact{
+	padding: 64px 48px;
+}
+
 li[role=tab]:not(.ui-state-active){
 	background: #27313d !important;
 	margin-bottom: 0 !important;
@@ -216,6 +224,7 @@ li[role=tab]:not(.ui-state-active) a{
 	border-bottom: 0 !important;
 	border-right: 1px solid #dddddd !important;
 	border-left: 1px solid #dddddd !important;
+	margin: 1px !important;
 }
 
 .ui-state-active a{
@@ -244,11 +253,40 @@ div[id^=tab-]{
 .form-derecha{
 	background-color: grey;
 }
-.cancelar{
-	background-color: white;
-	color: red;
+
+.send{
+	background-color: #000;
+	color: #fff;
+	padding: 12px 24px;
+	border-radius: 0;
 }
-.enviar{
-	background-color: red;
-	color: white;
+
+.map-cover{
+	background: url(../img/map.jpg) no-repeat center;
+}
+
+.go-up{
+	display:none;
+	padding:20px;
+	background:#000;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	border-radius: 50%;
+}
+
+@media (max-width: 768px){
+	.map-cover{
+		display: none;
+	}
+
+}
+
+@media (max-width: 576px) {
+	.ui-tabs .ui-tabs-nav{
+		display: grid !important;
+	}
 }

@@ -12,7 +12,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/myapp.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-ui.min.js"></script> 
 </head>
@@ -38,7 +37,7 @@
 		<h2>Equipo</h2>
 		<div id="team" class="row container">
 			<div class="col-sm">
-				<img src="img/developer.jpg" id="outer" alt="Diego">
+				<img src="img/developer.jpg" alt="Diego">
 				<div class="img-cover">
 					<div class="display-middle text-center">
 						<h3>Diego</h3>
@@ -47,7 +46,7 @@
 				</div>
 			</div>
 			<div class="col-sm">
-				<img src="img/developer.jpg" id="outer2" alt="Juan">
+				<img src="img/developer.jpg" alt="Juan">
 				<div class="img-cover">
 					<div class="display-middle text-center">
 						<h3>Juan</h3>
@@ -123,66 +122,41 @@
 			<div class="container">
 				<h2>Contacto</h2>
 				<div class="row">
-					<div class="col-2 form-izquierda">
-						<i class="fa fa-envelope"></i>
-					</div>
-					<div class="col-10">
-						<p>Contáctanos</p>		
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-2 form-izquierda">
-						<p>Por favor describe tu idea de producto en pocas palabras</p>
-					</div>
-					<div class="col-10">
-						<div class="form-group">
-			 				<label for="message" class="control-label col-md-2 col-md-offset-5">Mensaje
-			 				</label>
+					<div class="col">
+						<p><i class="fa fa-map-marker"></i> Valencia, España</p>
+					    <p><i class="fa fa-phone"></i> Teléfono: +34 666 666 666</p>
+					    <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+					    <form action="">
+				 			<div class="form-group">
+				 				<label for="name" class="control-label col-md-2">Nombre
+				 				</label>
+			 				</div>
 			 				<div class="">
-			 					<textarea cols=50 rows=10 type="text" class="form-control" id="message" name="" placeholder="Mensaje:"></textarea>
-			 				</div>
-			 			</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-2 form-izquierda">
-						<p>Necesitamos tu correo para contactar contigo</p>
-					</div>
-					<div class="col-10">
-							<div class="col-md-5">
-								<div class="form-group">
-					 				<label for="name" class="control-label col-md-2">Nombre
-					 				</label>
+			 					<input type="text" class="form-control" id="name" name="" placeholder="Nombre:">
+		 					</div>
+		 					<div class="form-group">
+				 				<label for="email" class="control-label col-md-2 col-md-offset-5">Correo
+				 				</label>
 				 				<div class="">
-				 					<input type="text" class="form-control" id="name" name="" placeholder="Nombre:">
+				 					<input type="text" class="form-control" id="email" name="" placeholder="Correo:">
 				 				</div>
 			 				</div>
-							<div class="col-md-5"></div>
-								<div class="form-group">
-					 				<label for="email" class="control-label col-md-2 col-md-offset-5">Correo
-					 				</label>
-					 				<div class="">
-					 					<input type="text" class="form-control" id="email" name="" placeholder="Correo:">
-					 				</div>
+							<div class="form-group">
+				 				<label for="message" class="control-label col-md-2 col-md-offset-5">Mensaje
+				 				</label>
+				 				<div class="">
+				 					<textarea rows=5 type="text" class="form-control" id="message" name="" placeholder="Escriba su mensaje aquí"></textarea>
 				 				</div>
-			 				</div>
-			 			</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2 form-izquierda form-group"></div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<button type="button" class="btn cancelar">Cancelar</button>
-						</div>
+				 			</div>
+				 			<br>
+							<button type="submit" class="btn send">Enviar</button>
+						</form>
 					</div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<button type="submit" class="btn enviar">Enviar</button>
-						</div>
+					<div class="col map-cover">
 					</div>
-				</div>
 				</div>
 			</div>
+		</div>
 		
 		<footer class="container-fluid">
 			<i class="fa fa-facebook-official"></i>
@@ -196,7 +170,7 @@
 	
 	</div>
 
-
+	<div class="go-up fa fa-arrow-up"></div>
 
 	
 </body>

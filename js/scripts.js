@@ -1,21 +1,17 @@
 $(function() {
 
     $( "#tabs-nohdr" ).tabs();
-  
-	/*$( document ).click(function() {
-  $( "#outer" ).toggle( "explode" );
-  $( "#outer2" ).toggle( "explode" );
-});
-*/
-              /*$("#outer").toggle(
-                function() {
-                    $("#outer").hide('explode', {}, 600);
-                },
-                function() {
-                    $("#outer").show('explode', {}, 600);
-                }
-             );*/
-
-
+    $('.go-up').click(function(){
+      $('body, html').animate({
+        scrollTop: '0px'
+      }, 300);
+    });
    
+    $(window).scroll(function(){
+      if( $(this).scrollTop() > 0 ){
+        $('.go-up').slideDown(300);
+      } else {
+        $('.go-up').slideUp(300);
+      }
+    });
 }); 
