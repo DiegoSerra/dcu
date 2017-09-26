@@ -309,6 +309,7 @@ div[id^=tab-]{
 
 @media (max-width: 576px) {
 	.ui-tabs .ui-tabs-nav{
+		text-align: center;
 		display: grid !important;
 	}
 
