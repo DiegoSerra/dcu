@@ -184,22 +184,57 @@ footer p{
     padding: 0px; 
     background: none; 
     border-width: 0px; 
-} 
+}
+
+
+.badge{
+	background: #cd4e4b;
+	color: #fff;
+	margin-left: 4px;
+}
+
+li[role=tab]:not(.ui-state-active){
+	background: #27313d !important;
+	margin-bottom: 0 !important;
+	margin: 1px !important;
+	border: 0 !important;
+	border-bottom: 4px solid #27313d !important;
+}
+
+li[role=tab]:not(.ui-state-active):hover{
+	background: #3f4752 !important;
+}
+
+li[role=tab]:not(.ui-state-active) a{
+	color: #abb1b8 !important;
+}
+
+.ui-state-active{
+	background: #fff !important;
+	color: #000 !important;
+	border-top: 4px solid #32a98d !important;
+	border-bottom: 0 !important;
+	border-right: 1px solid #dddddd !important;
+	border-left: 1px solid #dddddd !important;
+}
+
+.ui-state-active a{
+	color: #000 !important;
+}
+
 #tabs-nohdr .ui-tabs-nav { 
     padding-left: 0px; 
     background: transparent; 
-    border-width: 0px 0px 1px 0px; 
-    -moz-border-radius: 0px; 
-    -webkit-border-radius: 0px; 
-    border-radius: 0px; 
+    border: 0;
 } 
 
 #tabs-nohdr .ui-tabs-panel { 
     background: #f5f3e5 url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top; 
     border-width: 0px 1px 1px 1px; 
 }
-#tabs-nohdr .ui-state-active {
-background: blue !important;
+
+div[id^=tab-]{
+	background: #fff !important;
 }
 
 .form-izquierda{
