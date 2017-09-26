@@ -90,7 +90,10 @@ header a:hover{
 	top: 100%;
 	left: 0;
 	right: 0;
-	padding: 64px 0 0 0;
+}
+
+section{
+	height: 100vh;
 }
 
 #team img {
@@ -102,11 +105,12 @@ header a:hover{
 }
 
 #team{
-	padding: 0 48px 64px 48px;
+	padding: 64px 48px;
 	margin: 0px auto;
 }
 
 .main h2{
+	margin-top: 16px;
 	text-align: center;
 	font-weight: 100; 
 }
