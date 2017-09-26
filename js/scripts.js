@@ -22,7 +22,10 @@ $(function() {
       e.preventDefault();
       $('body,html').animate({
         scrollTop: $(this.hash).offset().top
-      }, 1000 );
+      }, {
+        queue: false,
+        duration: 1000
+      });
     });
     
     // Active link switching
