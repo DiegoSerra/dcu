@@ -307,4 +307,9 @@ div[id^=tab-]{
 	.ui-tabs .ui-tabs-nav{
 		display: grid !important;
 	}
+
+	#tab-0{
+		overflow-y: scroll;
+		max-height: 60vh;
+	}
 }
