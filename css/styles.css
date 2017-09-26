@@ -23,6 +23,15 @@ header a{
 
 header a:hover{
 	text-decoration: none;
+	color: #737373;
+}
+
+.menu li.active{
+	background: #454545;
+}
+
+.menu li.active a{
+	color: #fff;
 }
 
 .brand{
@@ -199,6 +208,11 @@ footer p{
 
 #contact{
 	padding: 64px 48px;
+}
+
+#contact .row{
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 li[role=tab]:not(.ui-state-active){
