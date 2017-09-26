@@ -219,6 +219,10 @@ footer p{
 	padding-bottom: 32px;
 }
 
+li[role=tab]:hover{
+	cursor: pointer;
+}
+
 li[role=tab]:not(.ui-state-active){
 	background: #27313d !important;
 	margin-bottom: 0 !important;
@@ -306,6 +310,10 @@ div[id^=tab-]{
 @media (max-width: 576px) {
 	.ui-tabs .ui-tabs-nav{
 		display: grid !important;
+	}
+
+	.ui-tabs .ui-tabs-nav a{
+		width: 100%;
 	}
 
 	#tab-0{
