@@ -304,6 +304,10 @@ div[id^=tab-]{
 	.map-cover{
 		display: none;
 	}
+	#about_us img{
+		max-width: 140px;
+		margin: auto;
+	}
 }
 
 @media (max-width: 576px) {
