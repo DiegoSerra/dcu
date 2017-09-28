@@ -304,10 +304,18 @@ div[id^=tab-]{
 	.map-cover{
 		display: none;
 	}
-
 }
 
 @media (max-width: 576px) {
+	#team img{
+		max-width: 300px;
+		margin: auto;
+	}
+
+	#team p.description{
+		display: none;
+	}
+
 	.ui-tabs .ui-tabs-nav{
 		text-align: center;
 		display: grid !important;

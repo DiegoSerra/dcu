@@ -6,7 +6,19 @@ $(function() {
         scrollTop: '0px'
       }, 300);
     });
-   
+
+    $('.img-cover').css({
+      height: $('#team img').height(),
+      width: $('#team img').height()
+    })
+
+    $(window).resize(function(){
+      $('.img-cover').css({
+        height: $('#team img').height(),
+        width: $('#team img').height()
+      })
+    })
+
     $(window).scroll(function(){
       if( $(this).scrollTop() > 0 ){
         $('.go-up').slideDown(300);
