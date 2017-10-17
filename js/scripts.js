@@ -12,14 +12,18 @@ $(function() {
       width: $('#team img').height()
     })
 
-    function validateEmail($email) {
-      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-      return emailReg.test( $email );
+    function validateEmail(email) {
+      var expr = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return expr.test(email);
     }
 
-    function testEmail(){
-      console.log("event")
-    };
+
+    $(".send").click(function () {
+        if (!validateEmail($("#email").val())) {
+            alert("Introduzca un email valido");
+            return false;
+        }
+    });
 
     $(window).resize(function(){
       $('.img-cover').css({
