@@ -12,6 +12,15 @@ $(function() {
       width: $('#team img').height()
     })
 
+    function validateEmail($email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      return emailReg.test( $email );
+    }
+
+    function testEmail(){
+      console.log("event")
+    };
+
     $(window).resize(function(){
       $('.img-cover').css({
         height: $('#team img').height(),

@@ -268,12 +268,9 @@ div[id^=tab-]{
 	background: #fff !important;
 }
 
-.form-izquierda{
-	background-color: yellow;
-}
-
-.form-derecha{
-	background-color: grey;
+.contact-info{
+	font-size: 18px;
+	font-weight: 200;
 }
 
 .send{
@@ -281,10 +278,16 @@ div[id^=tab-]{
 	color: #fff;
 	padding: 12px 24px;
 	border-radius: 0;
+	cursor: pointer;
 }
 
 .map-cover{
 	background: url(../img/map.jpg) no-repeat center;
+}
+
+.form-control{
+	border-radius: 0;
+	margin: 16px 0;
 }
 
 .go-up{
