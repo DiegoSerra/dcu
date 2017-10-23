@@ -68,4 +68,8 @@ $(function() {
       })
       
     })
+
+    $( document ).click(function() {
+        $( "#toggle" ).toggle( "scale" );
+      });
 }); 
