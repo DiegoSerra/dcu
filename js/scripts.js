@@ -68,19 +68,7 @@ $(function() {
       })
       
     })
-
-    var toggle = false;
-
-    // $( '#contact' ).click(function() {       
-    //     if(!toggle) $( "#toggle" ).toggle( "scale" );
-    //     toggle = false;
-    // })
-
-    // $( '#contact form' ).click(function(e) {
-    //     e.stopPropagation();
-    //     if(!toggle) $( "#toggle" ).toggle( "scale" );
-    //     toggle = true;
-    // });
+  
 
     $( '#contact' ).click(function() {       
       $( "#toggle" ).fadeIn( "slow" );

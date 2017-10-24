@@ -290,6 +290,10 @@ div[id^=tab-]{
 	margin: 16px 0;
 }
 
+footer a {
+	color: white;
+}
+
 .go-up{
 	display:none;
 	padding:20px;
